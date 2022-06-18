@@ -18,6 +18,7 @@ const checkJwt = [auth({
 }), appendUser];
 
 //Config
+app.use(express.static('public'));
 app.use(
   cors({
     methods: ['GET', 'POST', 'PUT'],
