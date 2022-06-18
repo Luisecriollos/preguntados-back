@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "marta.luis.preguntados",
+      "sha256_cert_fingerprints": [
+        "7D:6C:AC:00:8E:99:A2:D4:81:1B:38:E9:A7:A0:05:58:9D:07:82:CB:93:FA:70:9F:09:07:BB:8D:59:4F:46:F0"
+      ]
+    }
+  }
+]
