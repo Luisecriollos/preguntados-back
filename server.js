@@ -19,16 +19,16 @@ const checkJwt = [auth({
 
 //Config
 app.use(express.static('public'));
-app.use(
-  cors({
-    methods: ['GET', 'POST', 'PUT'],
-  })
-);
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+// app.use(
+//   cors({
+//     methods: ['GET', 'POST', 'PUT'],
+//   })
+// );
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
 
-const userRoutes = require('./components/auth').routes;
-app.use('/user', ...checkJwt, userRoutes);
+// const userRoutes = require('./components/auth').routes;
+// app.use('/user', ...checkJwt, userRoutes);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
